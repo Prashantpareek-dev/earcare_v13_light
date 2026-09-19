@@ -1366,7 +1366,7 @@
     }
 
     .ingredient__media {
-      aspect-ratio: 1 / 1;
+      aspect-ratio: 2 / 1;
       border-radius: 0;
     }
 
@@ -1770,6 +1770,51 @@
     .form-card {
       padding: 22px 18px 20px;
       border-radius: 22px;
+      background: var(--brand-primary);
+      border-color: rgba(255, 255, 255, 0.18);
+    }
+
+    /* Everything inside the red form card flips to white-on-red */
+    .form-card .field label,
+    .form-card .field label span,
+    .form-card .form-proof__text strong,
+    .form-card .form-proof__stars em,
+    .form-card .form-error {
+      color: #ffffff;
+    }
+
+    .form-card .form-proof {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .form-card .form-proof__avatars img,
+    .form-card .form-proof__avatars span {
+      border-color: var(--brand-primary);
+    }
+
+    .form-card .form-proof__avatars span {
+      background: #ffffff;
+      color: var(--brand-primary);
+    }
+
+    .form-card .input {
+      border-color: rgba(255, 255, 255, 0.35);
+    }
+
+    .form-card .input:focus {
+      border-color: #ffffff;
+      box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.25);
+    }
+
+    .form-card .btn {
+      background: #ffffff;
+      color: var(--brand-primary);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
+    }
+
+    .form-card .btn:hover {
+      background: #f6f6f6;
     }
 
     .problems {
@@ -2044,7 +2089,7 @@
       align-items: center;
       flex-wrap: wrap;
       gap: 1px;
-      color: var(--star);
+      color: #ffffff;
     }
 
     .form-proof__stars svg {
@@ -2636,8 +2681,8 @@
                 onload="this.classList.add('is-loaded')" onerror="this.parentNode.classList.add('image-placeholder')">
             </div>
             <div class="pain-card__body">
-              <h3>बार-बार क्या कहा? पूछना</h3>
-              <p>एक ही बात को दो-तीन बार सुनने की ज़रूरत महसूस होना।</p>
+              <h3>कान में मवाद होने से</h3>
+              <p>सुनने में परेशानी।</p>
             </div>
           </li>
           <li class="card pain-card" data-reveal="" style="--i:1">
@@ -2647,8 +2692,8 @@
                 onload="this.classList.add('is-loaded')" onerror="this.parentNode.classList.add('image-placeholder')">
             </div>
             <div class="pain-card__body">
-              <h3>धीमी आवाज़ समझने में परेशानी</h3>
-              <p>फुसफुसाहट या दूर से आती आवाज़ साफ़ न सुनाई देना।</p>
+              <h3>कान में पस होने से</h3>
+              <p>धीमी आवाज़ समझने में दिक्कत।</p>
             </div>
           </li>
           <li class="card pain-card" data-reveal="" style="--i:2">
@@ -2658,8 +2703,8 @@
                 onload="this.classList.add('is-loaded')" onerror="this.parentNode.classList.add('image-placeholder')">
             </div>
             <div class="pain-card__body">
-              <h3>TV या मोबाइल की आवाज़ ज़्यादा रखना</h3>
-              <p>घरवालों को volume ज़्यादा लगे, पर आपको सामान्य।</p>
+              <h3>कान में इंफेक्शन होने से</h3>
+              <p>TV या मोबाइल की आवाज़ तेज़ रखना।</p>
             </div>
           </li>
           <li class="card pain-card" data-reveal="" style="--i:0">
@@ -2669,8 +2714,8 @@
                 onload="this.classList.add('is-loaded')" onerror="this.parentNode.classList.add('image-placeholder')">
             </div>
             <div class="pain-card__body">
-              <h3>भीड़ में बातचीत समझने में कठिनाई</h3>
-              <p>शादी, बाज़ार या restaurant में सारी आवाज़ें mix हो जाना।</p>
+              <h3>कम सुनाई देने के कारण</h3>
+              <p>भीड़ में बातचीत समझने में मुश्किल।</p>
             </div>
           </li>
           <li class="card pain-card" data-reveal="" style="--i:1">
@@ -2680,8 +2725,8 @@
                 onload="this.classList.add('is-loaded')" onerror="this.parentNode.classList.add('image-placeholder')">
             </div>
             <div class="pain-card__body">
-              <h3>कानों में सीटी या दूसरी आवाज़ महसूस होना</h3>
-              <p>शांत कमरे में भी कान में हल्की सीटी या भिनभिनाहट।</p>
+              <h3>कान में भिनभिनाहट होने से</h3>
+              <p>सीटी जैसी आवाज़ महसूस होना।</p>
             </div>
           </li>
           <li class="card pain-card" data-reveal="" style="--i:2">
@@ -2691,8 +2736,8 @@
                 onload="this.classList.add('is-loaded')" onerror="this.parentNode.classList.add('image-placeholder')">
             </div>
             <div class="pain-card__body">
-              <h3>परिवार और दोस्तों से बातचीत में असहज महसूस करना</h3>
-              <p>गलत सुन लेने के डर से चुप रह जाना।</p>
+              <h3>बहरापन महसूस होने से</h3>
+              <p>परिवार और दोस्तों से बातचीत में असहजता।</p>
             </div>
           </li>
         </ul>
@@ -2776,12 +2821,12 @@
           <li class="step" data-reveal="" style="--i:0">
             <span class="step__num" aria-hidden="true">01</span>
             <div class="card step__card">
-              <!-- Replace with: assets/14.avif -->
+              <!-- Replace with: assets/H-20.avif -->
               <div class="media step__media">
-                <img src="assets/14.avif" alt="कानों की नसों को पोषण" width="380" height="238" loading="lazy"
+                <img src="assets/H-20.avif" alt="मवाद बनने से बचाव" width="380" height="238" loading="lazy"
                   decoding="async" onload="this.classList.add('is-loaded')"
                   onerror="this.parentNode.classList.add('image-placeholder')">
-                <span class="ph-label"><span>IMAGE</span><small>assets/14.avif</small></span>
+                <span class="ph-label"><span>IMAGE</span><small>assets/H-20.avif</small></span>
               </div>
               <div class="step__row">
                 <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
@@ -2795,8 +2840,8 @@
                     <circle cx="16" cy="3" r="1.2"></circle>
                   </svg></span>
                 <div>
-                  <h3>कानों की नसों को पोषण</h3>
-                  <p>कानों की नसों को पोषण देकर सुनने की क्षमता को support करने में मदद करे।</p>
+                  <h3>मवाद बनने से बचाव</h3>
+                  <p>कान में मवाद बनने से रोकने में मदद करे।</p>
                 </div>
               </div>
             </div>
@@ -2804,11 +2849,11 @@
           <li class="step" data-reveal="" style="--i:1">
             <span class="step__num" aria-hidden="true">02</span>
             <div class="card step__card">
-              <!-- Replace with: assets/15.avif -->
+              <!-- Replace with: assets/H-21.avif -->
               <div class="media step__media">
-                <img src="assets/15.avif" alt="Tinnitus Care" width="380" height="238" loading="lazy" decoding="async"
+                <img src="assets/H-21.avif" alt="पस की समस्या में सहायता" width="380" height="238" loading="lazy" decoding="async"
                   onload="this.classList.add('is-loaded')" onerror="this.parentNode.classList.add('image-placeholder')">
-                <span class="ph-label"><span>IMAGE</span><small>assets/15.avif</small></span>
+                <span class="ph-label"><span>IMAGE</span><small>assets/H-21.avif</small></span>
               </div>
               <div class="step__row">
                 <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
@@ -2819,8 +2864,8 @@
                     <path d="M4.5 5.5A8 8 0 0 0 3 10M2.5 3A11 11 0 0 0 .7 7" opacity=".5"></path>
                   </svg></span>
                 <div>
-                  <h3>Tinnitus Care</h3>
-                  <p>कानों में बजने वाली आवाज़ (Tinnitus) से राहत में सहायता करे।</p>
+                  <h3>पस की समस्या में सहायता</h3>
+                  <p>कान से पस आने की समस्या में सहायता करे।</p>
                 </div>
               </div>
             </div>
@@ -2828,12 +2873,12 @@
           <li class="step" data-reveal="" style="--i:0">
             <span class="step__num" aria-hidden="true">03</span>
             <div class="card step__card">
-              <!-- Replace with: assets/16.avif -->
+              <!-- Replace with: assets/H-22.avif -->
               <div class="media step__media">
-                <img src="assets/16.avif" alt="Blood Circulation Support" width="380" height="238" loading="lazy"
+                <img src="assets/H-22.avif" alt="इंफेक्शन से बचाव" width="380" height="238" loading="lazy"
                   decoding="async" onload="this.classList.add('is-loaded')"
                   onerror="this.parentNode.classList.add('image-placeholder')">
-                <span class="ph-label"><span>IMAGE</span><small>assets/16.avif</small></span>
+                <span class="ph-label"><span>IMAGE</span><small>assets/H-22.avif</small></span>
               </div>
               <div class="step__row">
                 <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
@@ -2842,8 +2887,8 @@
                     <path d="M9.5 14a2.5 2.5 0 0 0 2.5 2.5"></path>
                   </svg></span>
                 <div>
-                  <h3>Blood Circulation Support</h3>
-                  <p>कानों में blood circulation को support करने में मदद करे।</p>
+                  <h3>इंफेक्शन से बचाव</h3>
+                  <p>कान के इंफेक्शन से बचाव में सहायता करे।</p>
                 </div>
               </div>
             </div>
@@ -2851,12 +2896,12 @@
           <li class="step" data-reveal="" style="--i:1">
             <span class="step__num" aria-hidden="true">04</span>
             <div class="card step__card">
-              <!-- Replace with: assets/17.avif -->
+              <!-- Replace with: assets/H-23.avif -->
               <div class="media step__media">
-                <img src="assets/17.avif" alt="Ear Wax &amp; Blockage Care" width="380" height="238" loading="lazy"
+                <img src="assets/H-23.avif" alt="सुनने की क्षमता को सपोर्ट" width="380" height="238" loading="lazy"
                   decoding="async" onload="this.classList.add('is-loaded')"
                   onerror="this.parentNode.classList.add('image-placeholder')">
-                <span class="ph-label"><span>IMAGE</span><small>assets/17.avif</small></span>
+                <span class="ph-label"><span>IMAGE</span><small>assets/H-23.avif</small></span>
               </div>
               <div class="step__row">
                 <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
@@ -2866,8 +2911,8 @@
                     <path d="M4 4l16 16" opacity=".35"></path>
                   </svg></span>
                 <div>
-                  <h3>Ear Wax &amp; Blockage Care</h3>
-                  <p>कान में जमा वैक्स से जुड़ी blockage और discomfort की care में सहायता करे।</p>
+                  <h3>सुनने की क्षमता को सपोर्ट</h3>
+                  <p>सुनने की क्षमता को सपोर्ट करे।</p>
                 </div>
               </div>
             </div>
@@ -2875,12 +2920,12 @@
           <li class="step" data-reveal="" style="--i:0">
             <span class="step__num" aria-hidden="true">05</span>
             <div class="card step__card">
-              <!-- Replace with: assets/18.avif -->
+              <!-- Replace with: assets/H-24.avif -->
               <div class="media step__media">
-                <img src="assets/18.avif" alt="Hearing Health Support" width="380" height="238" loading="lazy"
+                <img src="assets/H-24.avif" alt="भिनभिनाहट में राहत" width="380" height="238" loading="lazy"
                   decoding="async" onload="this.classList.add('is-loaded')"
                   onerror="this.parentNode.classList.add('image-placeholder')">
-                <span class="ph-label"><span>IMAGE</span><small>assets/18.avif</small></span>
+                <span class="ph-label"><span>IMAGE</span><small>assets/H-24.avif</small></span>
               </div>
               <div class="step__row">
                 <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
@@ -2889,8 +2934,32 @@
                     <path d="M10 9.7a2.2 2.2 0 0 1 4.4 0c0 1.2-.8 1.7-1.2 2.5"></path>
                   </svg></span>
                 <div>
-                  <h3>Hearing Health Support</h3>
-                  <p>कानों की नियमित देखभाल के साथ hearing health को support करने में मदद करे।</p>
+                  <h3>भिनभिनाहट में राहत</h3>
+                  <p>कान की भिनभिनाहट कम करने में मदद करे।</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="step" data-reveal="" style="--i:1">
+            <span class="step__num" aria-hidden="true">06</span>
+            <div class="card step__card">
+              <!-- Replace with: assets/H-25.avif -->
+              <div class="media step__media">
+                <img src="assets/H-25.avif" alt="भारीपन और असहजता में राहत" width="380" height="238" loading="lazy"
+                  decoding="async" onload="this.classList.add('is-loaded')"
+                  onerror="this.parentNode.classList.add('image-placeholder')">
+                <span class="ph-label"><span>IMAGE</span><small>assets/H-25.avif</small></span>
+              </div>
+              <div class="step__row">
+                <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 9.5a5 5 0 0 1 10 0c0 2.6-1.8 3.4-2.6 5.1S13.6 19 11 19"></path>
+                    <path d="M10 9.7a2.2 2.2 0 0 1 4.4 0c0 1.2-.8 1.7-1.2 2.5"></path>
+                    <path d="M4 20c2.5-1.5 5-1.5 8 0s5.5 1.5 8 0" opacity=".5"></path>
+                  </svg></span>
+                <div>
+                  <h3>भारीपन और असहजता में राहत</h3>
+                  <p>कान के भारीपन और असहजता में राहत देने में सहायता करे।</p>
                 </div>
               </div>
             </div>
@@ -2929,95 +2998,6 @@
             होने पर EarCare को daily ear-care support के रूप में लें।</p>
         </div>
 
-      </section>
-
-      <!-- ============================================================
-           07 — COMPARISON
-           ============================================================ -->
-      <section class="section" aria-labelledby="compare-title">
-        <h2 id="compare-title" class="section-title" data-reveal="">सिर्फ़ सुनने की समस्या नहीं… पूरी Ear-Care Routine पर ध्यान दें</h2>
-        <div class="card compare" data-reveal="" role="table" aria-label="Comparison">
-          <div class="compare__head" role="row">
-            <div class="left" role="columnheader">
-              सामान्य Approach
-            </div>
-            <div class="right" role="columnheader">
-              EarCare Approach
-            </div>
-          </div>
-          <div role="rowgroup">
-            <div class="compare__row" role="row" data-reveal="" style="--i:0">
-              <div class="left" role="cell">
-                <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M7 7l10 10M17 7 7 17"></path>
-                  </svg></span><span>केवल समस्या महसूस होने पर ध्यान</span>
-              </div>
-              <div class="right" role="cell">
-                <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="m5 12.5 4.5 4.5L19 7.5"></path>
-                  </svg></span><span>Daily ear-care routine</span>
-              </div>
-            </div>
-            <div class="compare__row" role="row" data-reveal="" style="--i:1">
-              <div class="left" role="cell">
-                <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M7 7l10 10M17 7 7 17"></path>
-                  </svg></span><span>अलग-अलग ingredients की जानकारी समझना मुश्किल</span>
-              </div>
-              <div class="right" role="cell">
-                <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="m5 12.5 4.5 4.5L19 7.5"></path>
-                  </svg></span><span>Selected Ayurvedic formulation</span>
-              </div>
-            </div>
-            <div class="compare__row" role="row" data-reveal="" style="--i:2">
-              <div class="left" role="cell">
-                <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M7 7l10 10M17 7 7 17"></path>
-                  </svg></span><span>Routine maintain करना मुश्किल</span>
-              </div>
-              <div class="right" role="cell">
-                <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="m5 12.5 4.5 4.5L19 7.5"></path>
-                  </svg></span><span>Easy-to-follow daily use</span>
-              </div>
-            </div>
-            <div class="compare__row" role="row" data-reveal="" style="--i:3">
-              <div class="left" role="cell">
-                <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M7 7l10 10M17 7 7 17"></path>
-                  </svg></span><span>Product selection में confusion</span>
-              </div>
-              <div class="right" role="cell">
-                <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="m5 12.5 4.5 4.5L19 7.5"></path>
-                  </svg></span><span>Purpose-focused formulation</span>
-              </div>
-            </div>
-            <div class="compare__row" role="row" data-reveal="" style="--i:4">
-              <div class="left" role="cell">
-                <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M7 7l10 10M17 7 7 17"></path>
-                  </svg></span><span>Long-term routine पर कम ध्यान</span>
-              </div>
-              <div class="right" role="cell">
-                <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="m5 12.5 4.5 4.5L19 7.5"></path>
-                  </svg></span><span>Consistent daily care</span>
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
 
       <!-- ============================================================
@@ -3489,75 +3469,6 @@
                   placeholder="10 अंकों का मोबाइल नंबर">
               </div>
             </div>
-            <fieldset class="field problems" id="problemList">
-              <legend>आपकी समस्या चुनें <span class="opt">(एक या अधिक)</span></legend>
-              <div class="check-grid">
-                <label class="check">
-                  <input type="checkbox" value="Hearing Loss / सुनने में कमी">
-                  <span class="check__box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                      stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="m5 12.5 4.5 4.5L19 7.5" />
-                    </svg></span>
-                  <span class="check__text"><b>Hearing Loss</b><small>सुनने में कमी</small></span>
-                </label>
-                <label class="check">
-                  <input type="checkbox" value="Tinnitus / कानों में सीटी या घंटी बजना">
-                  <span class="check__box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                      stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="m5 12.5 4.5 4.5L19 7.5" />
-                    </svg></span>
-                  <span class="check__text"><b>Tinnitus</b><small>कानों में सीटी या घंटी बजना</small></span>
-                </label>
-                <label class="check">
-                  <input type="checkbox" value="Earwax Buildup / कान में मैल जमा होना">
-                  <span class="check__box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                      stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="m5 12.5 4.5 4.5L19 7.5" />
-                    </svg></span>
-                  <span class="check__text"><b>Earwax Buildup</b><small>कान में मैल जमा होना</small></span>
-                </label>
-                <label class="check">
-                  <input type="checkbox" value="Ear Infection / कान में संक्रमण">
-                  <span class="check__box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                      stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="m5 12.5 4.5 4.5L19 7.5" />
-                    </svg></span>
-                  <span class="check__text"><b>Ear Infection</b><small>कान में संक्रमण</small></span>
-                </label>
-                <label class="check">
-                  <input type="checkbox" value="Earache / कान में दर्द">
-                  <span class="check__box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                      stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="m5 12.5 4.5 4.5L19 7.5" />
-                    </svg></span>
-                  <span class="check__text"><b>Earache</b><small>कान में दर्द</small></span>
-                </label>
-                <label class="check">
-                  <input type="checkbox" value="Blocked Ear / कान बंद या भरा हुआ लगना">
-                  <span class="check__box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                      stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="m5 12.5 4.5 4.5L19 7.5" />
-                    </svg></span>
-                  <span class="check__text"><b>Blocked Ear</b><small>कान बंद या भरा हुआ लगना</small></span>
-                </label>
-                <label class="check">
-                  <input type="checkbox" value="Dizziness / चक्कर या संतुलन की समस्या">
-                  <span class="check__box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                      stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="m5 12.5 4.5 4.5L19 7.5" />
-                    </svg></span>
-                  <span class="check__text"><b>Dizziness</b><small>चक्कर या संतुलन की समस्या</small></span>
-                </label>
-                <label class="check">
-                  <input type="checkbox" value="Ear Pressure / कान में दबाव महसूस होना">
-                  <span class="check__box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                      stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="m5 12.5 4.5 4.5L19 7.5" />
-                    </svg></span>
-                  <span class="check__text"><b>Ear Pressure</b><small>कान में दबाव महसूस होना</small></span>
-                </label>
-              </div>
-            </fieldset>
             <button class="btn" type="submit" id="submitBtn"><span class="icon" aria-hidden="true"><svg
                   viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
                   stroke-linejoin="round">
@@ -3789,11 +3700,6 @@
       } else {
         heroVisible = false; updateSticky();
       }
-
-      /* ---- Problem checklist: visual state (fallback for browsers without :has) ---- */
-      document.querySelectorAll('#problemList input[type="checkbox"]').forEach(function (c) {
-        c.addEventListener('change', function () { c.closest('.check').classList.toggle('is-checked', c.checked); });
-      });
 
       /* ---- Order form: input sanitising, validation, single submit → Google Sheet → ThankYou ---- */
       var form = document.getElementById('orderForm');
