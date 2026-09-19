@@ -274,7 +274,7 @@
 
     .section-sub {
       color: var(--text-secondary);
-      font-size: 15px;
+      font-size: 16px;
       margin-bottom: 22px;
     }
 
@@ -801,12 +801,12 @@
     }
 
     .pain-card h3 {
-      font-size: 16px;
+      font-size: 22px;
       margin-bottom: 3px;
     }
 
     .pain-card p {
-      font-size: 13.5px;
+      font-size: 16px;
       color: var(--text-secondary);
       line-height: 1.45;
     }
@@ -943,11 +943,11 @@
 
     .product__copy p {
       color: var(--text-secondary);
-      font-size: 15px;
+      font-size: 20px;
     }
 
     .product__copy p+p {
-      margin-top: 10px;
+      margin-top: 14px;
     }
 
     .points {
@@ -964,6 +964,7 @@
       gap: 8px;
       text-align: center;
       padding: 14px 8px;
+      border: 2px solid rgba(255, 0, 0, 0.208);
       border-radius: 14px;
     }
 
@@ -1065,12 +1066,12 @@
     }
 
     .step h3 {
-      font-size: 16.5px;
+      font-size: 18px;
       margin-bottom: 4px;
     }
 
     .step p {
-      font-size: 14px;
+      font-size: 16px;
       color: var(--text-secondary);
       line-height: 1.5;
     }
@@ -1117,7 +1118,7 @@
 
     .expert__copy p {
       color: var(--text-secondary);
-      font-size: 16px;
+      font-size: 20px;
     }
 
     .expert__copy p+p {
@@ -1764,26 +1765,6 @@
        ================================================================= */
     .order {
       scroll-margin-top: 12px;
-      background: linear-gradient(180deg, #8f1113 0%, #6f0d0f 100%);
-      border-top-color: rgba(255, 255, 255, 0.12) !important;
-    }
-
-    .order::before,
-    .order::after {
-      display: none;   /* brand ornament is invisible on the red band */
-    }
-
-    .order .section-title,
-    .order .section-sub {
-      color: #fff;
-    }
-
-    .order .section-sub {
-      opacity: .85;
-    }
-
-    .order .form-card {
-      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
     }
 
     .form-card {
@@ -2108,12 +2089,6 @@
       flex: 0 0 auto;
     }
 
-    .btn:disabled {
-      opacity: .6;
-      cursor: not-allowed;
-      pointer-events: none;
-    }
-
     /* Full-page overlay shown after PLACE ORDER until the ThankYou redirect */
     .form-status {
       display: none;
@@ -2123,11 +2098,11 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      background: rgba(0, 0, 0, 0.72);
+      background: var(--overlay);
       -webkit-backdrop-filter: blur(4px);
       backdrop-filter: blur(4px);
       text-align: center;
-      color: #fff;
+      color: var(--text-primary);
       font-weight: 600;
       font-size: 16px;
     }
@@ -2659,7 +2634,6 @@
               <!-- Replace with: assets/7.avif -->
               <img src="assets/7.avif" alt="" width="104" height="104" loading="lazy" decoding="async"
                 onload="this.classList.add('is-loaded')" onerror="this.parentNode.classList.add('image-placeholder')">
-              <span class="pain-card__num">01</span>
             </div>
             <div class="pain-card__body">
               <h3>बार-बार क्या कहा? पूछना</h3>
@@ -2671,7 +2645,6 @@
               <!-- Replace with: assets/8.avif -->
               <img src="assets/8.avif" alt="" width="104" height="104" loading="lazy" decoding="async"
                 onload="this.classList.add('is-loaded')" onerror="this.parentNode.classList.add('image-placeholder')">
-              <span class="pain-card__num">02</span>
             </div>
             <div class="pain-card__body">
               <h3>धीमी आवाज़ समझने में परेशानी</h3>
@@ -2683,7 +2656,6 @@
               <!-- Replace with: assets/9.avif -->
               <img src="assets/9.avif" alt="" width="104" height="104" loading="lazy" decoding="async"
                 onload="this.classList.add('is-loaded')" onerror="this.parentNode.classList.add('image-placeholder')">
-              <span class="pain-card__num">03</span>
             </div>
             <div class="pain-card__body">
               <h3>TV या मोबाइल की आवाज़ ज़्यादा रखना</h3>
@@ -2695,7 +2667,6 @@
               <!-- Replace with: assets/10.avif -->
               <img src="assets/10.avif" alt="" width="104" height="104" loading="lazy" decoding="async"
                 onload="this.classList.add('is-loaded')" onerror="this.parentNode.classList.add('image-placeholder')">
-              <span class="pain-card__num">04</span>
             </div>
             <div class="pain-card__body">
               <h3>भीड़ में बातचीत समझने में कठिनाई</h3>
@@ -2707,7 +2678,6 @@
               <!-- Replace with: assets/11.avif -->
               <img src="assets/11.avif" alt="" width="104" height="104" loading="lazy" decoding="async"
                 onload="this.classList.add('is-loaded')" onerror="this.parentNode.classList.add('image-placeholder')">
-              <span class="pain-card__num">05</span>
             </div>
             <div class="pain-card__body">
               <h3>कानों में सीटी या दूसरी आवाज़ महसूस होना</h3>
@@ -2719,7 +2689,6 @@
               <!-- Replace with: assets/12.avif -->
               <img src="assets/12.avif" alt="" width="104" height="104" loading="lazy" decoding="async"
                 onload="this.classList.add('is-loaded')" onerror="this.parentNode.classList.add('image-placeholder')">
-              <span class="pain-card__num">06</span>
             </div>
             <div class="pain-card__body">
               <h3>परिवार और दोस्तों से बातचीत में असहज महसूस करना</h3>
@@ -3602,37 +3571,7 @@
               <span>आपका order submit हो रहा है</span>…
             </div>
           </form>
-          <ul class="form-meta">
-            <li>
-              <span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-                  stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"></path>
-                  <circle cx="7" cy="17.5" r="1.8"></circle>
-                  <circle cx="17" cy="17.5" r="1.8"></circle>
-                </svg></span> <span>Cash on Delivery Available*</span>
-            </li>
-            <li>
-              <span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-                  stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="5" y="10" width="14" height="10" rx="2"></rect>
-                  <path d="M8 10V7a4 4 0 0 1 8 0v3"></path>
-                </svg></span> <span>आपकी जानकारी सुरक्षित रखी जाएगी।</span>
-            </li>
-            <li>
-              <span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-                  stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 3l7 3v5c0 4.6-3 8.4-7 10-4-1.6-7-5.4-7-10V6z"></path>
-                  <path d="m9 12 2 2 4-4"></path>
-                </svg></span> <span>Free Delivery — पूरे India में</span>
-            </li>
-            <li>
-              <span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-                  stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 20c0-7 4-13 14-15-1 10-7 14-14 15z"></path>
-                  <path d="M5 20c3-5 6-8 10-11"></path>
-                </svg></span> <span>100% Ayurvedic Formula</span>
-            </li>
-          </ul>
+        
         </div>
       </section>
 
